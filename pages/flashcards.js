@@ -11,7 +11,9 @@ export default function Flashcards() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navigation />
+        <div>
+          <Navigation /> 
+        </div>
       </main>
     </>
   );
