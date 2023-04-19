@@ -13,8 +13,32 @@ export default function Flashcards() {
       <main>
         <div>
           <Navigation /> 
+          <div className="h-8 w-64 ml-2 mt-32 border-4 border-sky-500 bg-blue-900 text-white text-center">
+            Define Pipelining
+          </div>
+          <div className="h-32 w-64 ml-2 border-4 border-sky-500 hover:bg-opacity-0 bg-blue-900 text-blue-900 transition duration: 250">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+              nihil assumenda doloribus voluptas eaque praesentium sequi
+          </div>
+          <div className="h-8 w-64 ml-2 mt-32 border-4 border-sky-500 bg-blue-900 text-white text-center">
+            Define Data Hazards
+          </div>
+          <div className="h-32 w-64 ml-2 border-4 border-sky-500 hover:bg-opacity-0 bg-blue-900 text-blue-900 transition duration: 250">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+            nihil assumenda doloribus voluptas eaque praesentium sequi
+          </div>
         </div>
       </main>
     </>
   );
 }
+
+
+{/* <div className="h-32 w-64 m-12 mt-32 border-4 border-sky-500 hover:bg-opacity-0 bg-blue-900 text-blue-900">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+  nihil assumenda doloribus voluptas eaque praesentium sequi
+  </div> */}
+{/* <div className="h-32 w-64 m-12 mt-32 border-4 border-sky-500 hover:bg-opacity-0 bg-blue-900 text-blue-900">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+  nihil assumenda doloribus voluptas eaque praesentium sequi
+  </div> */}
