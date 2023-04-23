@@ -6,7 +6,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        dark: "url('/dark.jpg')",
+        medium: "url('/medium.jpg')",
+        bright: "url('/bright.jpg')",
+      },
+    },
   },
   plugins: [],
 };

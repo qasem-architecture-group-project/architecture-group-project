@@ -4,10 +4,16 @@ import React, { useState, useEffect } from "react";
 import QuizView from "@/components/quizView";
 import ScoreView from "@/components/scoreView";
 import questions from "@/constants/quiz_content";
+import IncorrectQuestionsView from "@/components/incorrectQuestionView";
 
 export default function Quizzes() {
   const [animalInput, setAnimalInput] = useState("");
   const [result, setResult] = useState();
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [isQuizOver, setIsQuizOver] = useState(false);
+  const [viewIncorrectQuestions, setViewIncorrectQuestions] = useState(false);
+  const [score, setScore] = useState(0);
+  const [incorrectQuestions, setIncorrectQuestions] = useState([]);
 
   async function onSubmit(event) {
     event.preventDefault();
@@ -37,11 +43,6 @@ export default function Quizzes() {
     }
   }
 
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [isQuizOver, setIsQuizOver] = useState(false);
-  const [score, setScore] = useState(0);
-  const [incorrectQuestions, setIncorrectQuestions] = useState([]);
-
   const handleAnswerClick = (isCorrect) => {
     // check score
     if (isCorrect) {
@@ -54,9 +55,18 @@ export default function Quizzes() {
     }
 
     const next = currentQuestion + 1;
-    if (next < questions.length) setCurrentQuestion(next);
-    else setIsQuizOver(true);
+    if (next < questions.length) {
+      setCurrentQuestion(next);
+    } else {
+      setIsQuizOver(true);
+    }
   };
+  // Perform string conversions here
+  const incorrectQuestionsText = incorrectQuestions.map((q) => q.question);
+  const incorrectQuestionsString = incorrectQuestionsText.join(" | ");
+
+  // Now you can use the `incorrectQuestionsString` for the API call or any other purpose
+  console.log(incorrectQuestionsString);
 
   const handleResetClick = () => {
     // fix: score not resetting
@@ -75,31 +85,39 @@ export default function Quizzes() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navigation />
-        <div className="h-40"></div>
-        <h3>Name my pet</h3>
-        <form onSubmit={onSubmit}>
-          <input
-            type="text"
-            name="animal"
-            placeholder="Enter an animal"
-            value={animalInput}
-            onChange={(e) => setAnimalInput(e.target.value)}
-          />
-          <input type="submit" value="Generate names" />
-        </form>
-        <div>{result}</div>
-        <div className="h-12"></div>
-        <div className="flex justify-center">
-          {isQuizOver ? (
-            <ScoreView handleResetClick={handleResetClick} score={score} />
-          ) : (
-            <QuizView
-              questions={questions}
-              currentQuestion={currentQuestion}
-              handleAnswerClick={handleAnswerClick}
+        <div className="bg-medium bg-fixed bg-center bg-cover min-h-screen">
+          <Navigation />
+          <div className="h-40"></div>
+          <h3>Name my pet</h3>
+          <form onSubmit={onSubmit}>
+            <input
+              type="text"
+              name="animal"
+              placeholder="Enter an animal"
+              value={animalInput}
+              onChange={(e) => setAnimalInput(e.target.value)}
             />
-          )}
+            <input type="submit" value="Generate names" />
+          </form>
+          <div>{result}</div>
+          <div className="h-12"></div>
+          <div className="flex justify-center">
+            {viewIncorrectQuestions ? (
+              <IncorrectQuestionsView incorrectQuestions={incorrectQuestions} />
+            ) : isQuizOver ? (
+              <ScoreView
+                handleResetClick={handleResetClick}
+                score={score}
+                setViewIncorrectQuestions={setViewIncorrectQuestions}
+              />
+            ) : (
+              <QuizView
+                questions={questions}
+                currentQuestion={currentQuestion}
+                handleAnswerClick={handleAnswerClick}
+              />
+            )}
+          </div>
         </div>
       </main>
     </>

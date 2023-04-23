@@ -1,8 +1,12 @@
-import React from "react";
 import Confetti from "react-confetti";
+import questions from "@/constants/quiz_content";
 
-export default function ScoreView({ handleResetClick, score }) {
-  const goodScore = score >= 1; // Set your own condition for a good score
+export default function ScoreView({
+  handleResetClick,
+  score,
+  setViewIncorrectQuestions,
+}) {
+  const goodScore = score >= 1;
   const confettiColors = [
     "#FFBE0B",
     "#FB5607",
@@ -12,7 +16,7 @@ export default function ScoreView({ handleResetClick, score }) {
   ];
 
   return (
-    <div>
+    <div className="p-6 border border-slate-500 rounded-3xl text-center w-full mx-2 sm:w-3/4 lg:w-1/2 bg-slate-900 backdrop-blur-lg bg-opacity-40 text-slate-300">
       {goodScore && (
         <Confetti
           width={window.innerWidth}
@@ -22,9 +26,22 @@ export default function ScoreView({ handleResetClick, score }) {
           colors={confettiColors} // Set the custom colors
         />
       )}
-      <h1>{goodScore ? "Congratulations!" : "Better luck next time!"}</h1>
-      <p>Your score is {score} out of 5</p>
-      <button onClick={handleResetClick}>Try again</button>
+      <div>{goodScore ? "Congratulations!" : "Better luck next time!"}</div>
+      <div>
+        Your score is {score} out of {questions.length}
+      </div>
+      <div
+        className="border rounded-lg w-1/2 md:w-3/4 border-slate-400 mx-auto mt-2"
+        onClick={() => setViewIncorrectQuestions(true)}
+      >
+        View Incorrect Questions
+      </div>
+      <div
+        className="border rounded-lg w-1/2 md:w-3/4 border-slate-400 mx-auto mt-2"
+        onClick={handleResetClick}
+      >
+        Try again
+      </div>
     </div>
   );
 }

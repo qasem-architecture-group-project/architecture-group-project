@@ -6,7 +6,7 @@ export default function QuizView({
   handleAnswerClick,
 }) {
   return (
-    <div className="border-2 border-black rounded-3xl text-center w-3/4 sm:w-1/2">
+    <div className="p-6 border border-slate-500 rounded-3xl text-center w-full mx-2 sm:w-3/4 lg:w-1/2 bg-slate-900 backdrop-blur-lg bg-opacity-40 text-slate-300">
       <div className="">
         <span>
           Question {currentQuestion + 1} / {questions.length}
@@ -19,7 +19,7 @@ export default function QuizView({
           <div key={text}>
             <button
               onClick={() => handleAnswerClick(isCorrect)}
-              className="border-2 rounded-lg w-64 border-black mt-4"
+              className="border rounded-lg w-full md:w-3/4 border-slate-400 mt-4 py-2"
             >
               {text}
             </button>
