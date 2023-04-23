@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Navigation from "@/components/navigation";
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import QuizView from "@/components/quizView";
+import ScoreView from "@/components/scoreView";
+import questions from "@/constants/quiz_content";
 
 export default function Quizzes() {
   const [animalInput, setAnimalInput] = useState("");
@@ -34,6 +36,36 @@ export default function Quizzes() {
       alert(error.message);
     }
   }
+
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [isQuizOver, setIsQuizOver] = useState(false);
+  const [score, setScore] = useState(0);
+  const [incorrectQuestions, setIncorrectQuestions] = useState([]);
+
+  const handleAnswerClick = (isCorrect) => {
+    // check score
+    if (isCorrect) {
+      setScore(score + 1);
+    } else {
+      setIncorrectQuestions([
+        ...incorrectQuestions,
+        questions[currentQuestion],
+      ]);
+    }
+
+    const next = currentQuestion + 1;
+    if (next < questions.length) setCurrentQuestion(next);
+    else setIsQuizOver(true);
+  };
+
+  const handleResetClick = () => {
+    // fix: score not resetting
+    setScore(0);
+    setIncorrectQuestions([]);
+    setCurrentQuestion(0);
+    setIsQuizOver(false);
+  };
+
   return (
     <>
       <Head>
@@ -57,6 +89,18 @@ export default function Quizzes() {
           <input type="submit" value="Generate names" />
         </form>
         <div>{result}</div>
+        <div className="h-12"></div>
+        <div className="flex justify-center">
+          {isQuizOver ? (
+            <ScoreView handleResetClick={handleResetClick} score={score} />
+          ) : (
+            <QuizView
+              questions={questions}
+              currentQuestion={currentQuestion}
+              handleAnswerClick={handleAnswerClick}
+            />
+          )}
+        </div>
       </main>
     </>
   );

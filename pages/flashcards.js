@@ -12,6 +12,7 @@ export default function Flashcards() {
       </Head>
       <main>
         <Navigation />
+        {/* your code here */}
       </main>
     </>
   );
