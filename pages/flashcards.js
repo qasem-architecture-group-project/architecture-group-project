@@ -19,15 +19,20 @@ export default function Flashcards() {
           <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
             <div className="border-4 font-bold bg-blue-300 border-blue-500 col-span-4 select-none"> Chapter 1 - Performance Evaluation </div>
 
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Execution Time </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Performance = ... </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Baseline </div>
             <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Amdahl's Law </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Moore's Law </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Performance = ... </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Execution Time </div>
 
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900"> 
               <div class="flex items-center justify-center h-full select-none">
-                The time between the start and the completion of a task.
-              </div>     
+                The overall speedup is limited by the amount of parallelism applied in a program. 
+              </div> 
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div class="flex items-center justify-center h-full select-none">
+                The number of transistors on a single chip doubles every ~18 months. 
+              </div>    
             </div>
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
               <div class="flex items-center justify-center h-full select-none">
@@ -37,35 +42,56 @@ export default function Flashcards() {
             </div>
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
               <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
-              </div>    
-            </div>
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
-              <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+                The time between the start and the completion of a task.
               </div>                
             </div>
 
             {/* ----- Chapter 2 Topics ----- */}
 
             <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Dennard Scaling </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Performance </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Execution Time </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Amdahl's Law </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Power Wall </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Multicore Processors </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Space v Performance Trade-offs </div>
 
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900"> 
               <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+                Explained that there's a relationship between the processor area and power.
               </div>    
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Speed discrepancy between the CPU and Memory/RAM.
+              </div>  
             </div>
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
               <div class="flex items-center justify-center h-full select-none">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
                 nihil assumenda doloribus voluptas eaque praesentium sequi
-              </div>    
+              </div>
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> ... </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> ... </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> ... </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> ... </div>
+
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>
             </div>
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
               <div class="flex items-center justify-center h-full select-none">
@@ -144,6 +170,14 @@ export default function Flashcards() {
               </div>     
             </div>
           </div>
+
+          {/* ----- Chapter 3 Topics ----- */}
+
+          {/* ----- Chapter 4 Topics ----- */}
+
+          {/* ----- Chapter 5 Topics ----- */}
+
+          {/* ----- Chapter 6 Topics ----- */}
 
         </div>
       </main>
