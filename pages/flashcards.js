@@ -14,96 +14,139 @@ export default function Flashcards() {
         <div>
           <Navigation /> 
 
+          {/* ----- Chapter 1 Topics ----- */}
+
           <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
-            <div className="border-4 bg-blue-300 border-sky-500"> Dennard Scaling </div>
-            <div className="border-4 bg-blue-300 border-sky-500"> Performance </div>
-            <div className="border-4 bg-blue-300 border-sky-500"> Execution Time </div>
-            <div className="border-4 bg-blue-300 border-sky-500"> Amdahl's Law </div>
+            <div className="border-4 font-bold bg-blue-300 border-blue-500 col-span-4 select-none"> Chapter 1 - Performance Evaluation </div>
 
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 bg-blue-900"> 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-              nihil assumenda doloribus voluptas eaque praesentium sequi
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Execution Time </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Performance = ... </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Baseline </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Amdahl's Law </div>
+
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900"> 
+              <div class="flex items-center justify-center h-full select-none">
+                The time between the start and the completion of a task.
+              </div>     
             </div>
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 bg-blue-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-              nihil assumenda doloribus voluptas eaque praesentium sequi
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div class="flex items-center justify-center h-full select-none">
+                1 / Execution_Time <br />
+                The performance of your program will be inversely proportional to the execution time of your program. 
+              </div>    
             </div>
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 bg-blue-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-              nihil assumenda doloribus voluptas eaque praesentium sequi
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>    
             </div>
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 bg-blue-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-              nihil assumenda doloribus voluptas eaque praesentium sequi
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>                
             </div>
 
-            <div className="border-4 border-sky-500">(3,1)</div>
-            <div className="border-4 border-sky-500">(3,2)</div>
-            <div className="border-4 border-sky-500">(3,3)</div>
-            <div className="border-4 border-sky-500">(3,4)</div>
+            {/* ----- Chapter 2 Topics ----- */}
 
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 h-32 bg-blue-900">(4,1)</div>
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 h-32 bg-blue-900">(4,2)</div>
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 h-32 bg-blue-900">(4,3)</div>
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 h-32 bg-blue-900">(4,4)</div>
-          </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Dennard Scaling </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Performance </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Execution Time </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Amdahl's Law </div>
 
-          {/* <div className="mx-32 my-32 text-xl font-bold text-center">
-            Lecture 1: Evaluation Performance
-          </div>
-
-          <div className="h-8 w-64 mx-32 -my-32 border-4 border-sky-500 bg-blue-900 text-white text-center select-none font-bold">
-            Amdahl's Law
-          </div>
-          <div className="h-32 w-64 mx-32 my-32 border-4 border-sky-500 hover:bg-opacity-0 bg-blue-900 text-blue-900 transition duration: 0 text-center select-none">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-              nihil assumenda doloribus voluptas eaque praesentium sequi
-          </div>
-
-          <div className="h-8 w-64 mx-96 -my-72 border-4 border-sky-500 bg-blue-900 text-white text-center select-none font-bold">
-            Dennard Scaling
-          </div>
-          <div className="h-32 w-64 mx-96 my-72 border-4 border-sky-500 hover:bg-opacity-0 bg-blue-900 text-blue-900 transition duration: 0 text-center select-none">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-              nihil assumenda doloribus voluptas eaque praesentium sequi
-          </div> */}
-
-          {/* <div className="h-8 w-64 mx-96 -my-72 border-4 border-sky-500 bg-blue-900 text-white text-center select-none font-bold">
-            Dennard Scaling
-          </div>
-          <div className="h-32 w-64 mx-96 my-72 border-4 border-sky-500 hover:bg-opacity-0 bg-blue-900 text-blue-900 transition duration: 0 text-center select-none">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-              nihil assumenda doloribus voluptas eaque praesentium sequi
-          </div> */}
-
-          {/* <div className="h-8 w-64 mx-32 my-36 border-4 border-sky-500 bg-blue-900 text-white text-center select-none font-bold">
-            Define Dennard Scaling
-          </div>
-          <div className="h-32 w-64 mx-32 -my-36 border-4 border-sky-500 hover:bg-opacity-0 bg-blue-900 text-blue-900 transition duration: 0 text-center select-none">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-              nihil assumenda doloribus voluptas eaque praesentium sequi
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900"> 
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>    
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>    
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>
+            </div>
           </div>
 
-          <div className="h-8 w-64 mx-32 my-40 border-4 border-sky-500 bg-blue-900 text-white text-center select-none font-bold">
-            Define Data Hazards
+          <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 col-span-4 select-none"> Chapter 2 - ISA Introduction </div>
+
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Dennard Scaling </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Performance </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Execution Time </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Amdahl's Law </div>
+
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 h-32 text-purple-900 bg-purple-900"> 
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 h-32 text-purple-900 bg-purple-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 h-32 text-purple-900 bg-purple-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 h-32 text-purple-900 bg-purple-900">
+              <div class="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Dennard Scaling </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Performance </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Execution Time </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Amdahl's Law </div>
+
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900"> 
+              <div className="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>            
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>                
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>     
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+                nihil assumenda doloribus voluptas eaque praesentium sequi
+              </div>     
+            </div>
           </div>
-          <div className="h-32 w-64 mx-32 -my-40 border-4 border-sky-500 hover:bg-opacity-0 bg-blue-900 text-blue-900 transition duration: 0 text-center select-none">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-            nihil assumenda doloribus voluptas eaque praesentium sequi
-          </div> */}
 
         </div>
       </main>
     </>
   );
 }
-
-
-{/* <div className="h-32 w-64 m-12 mt-32 border-4 border-sky-500 hover:bg-opacity-0 bg-blue-900 text-blue-900">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-  nihil assumenda doloribus voluptas eaque praesentium sequi
-  </div> */}
-{/* <div className="h-32 w-64 m-12 mt-32 border-4 border-sky-500 hover:bg-opacity-0 bg-blue-900 text-blue-900">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-  nihil assumenda doloribus voluptas eaque praesentium sequi
-  </div> */}
