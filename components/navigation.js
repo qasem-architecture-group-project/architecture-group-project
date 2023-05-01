@@ -13,8 +13,8 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50 border-b">
+    <div className="bg-header-main">
+      <header className="absolute inset-x-0 top-0 z-50 bg-header-main">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
@@ -44,7 +44,7 @@ export default function Navigation() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-sm font-semibold leading-6 text-white"
               >
                 {item.name}
               </a>
