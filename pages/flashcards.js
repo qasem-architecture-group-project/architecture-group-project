@@ -344,9 +344,8 @@ export default function Flashcards() {
             </div>
             <div className="border-4 border-green-500 hover:bg-opacity-0 transition duration: 0 h-32 text-green-900 bg-green-900">
               <div class="flex items-center justify-center h-full select-none">
-              Floating Point Representation: <br/> 
-              Single - S(1) | Exponent(8) | Fraction(23) <br/> 
-              Double - S(1) | Exponent(11) | Fraction(52) <br/>
+              Floating Point Representation (Single/Double): <br/> 
+              S(1 or 0) | Exponent(8/11) | Fraction(23/52) <br/> 
               Interpretation: <br/> 
               (-1)^s * (1 + Fraction * 2^(Exponent - Bias))
               </div>
@@ -372,36 +371,134 @@ export default function Flashcards() {
           <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
             <div className="border-4 font-bold bg-indigo-300 border-indigo-500 col-span-4 select-none"> Chapter 4 - Datapath Processor </div>
 
-            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> ... </div>
-            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> ... </div>
-            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> ... </div>
-            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> ... </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> Datapath Elements </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> Pipelining - Purpose </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> Pipelining Layout in MIPS </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> Structural Hazard </div>
 
             <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900"> 
               <div class="flex items-center justify-center h-full select-none">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Registers - Special Registers: PC, SP, and Zero. <br/>
+              Register File, ALU, <br/>
+              Multiplexer (MUX), <br/>
+              and Instruction, and Data Memory. 
               </div>
             </div>
             <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
               <div class="flex items-center justify-center h-full select-none">
-              OR (X + Y) <br/>
-              AND (X * Y) <br/>
-              XOR (!X)
+              Break up tasks into smaller subtasks. <br/>
+              Bind subtasks to available resources.
               </div>
             </div>
             <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
               <div class="flex items-center justify-center h-full select-none">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory (MEM), and Write Back(WB). 
               </div>
             </div>
             <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
               <div class="flex items-center justify-center h-full select-none">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Two different instructions attempt to use the same resource at the same time. 
               </div>
             </div>
+
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> Data Hazard </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> Handling Data Hazard </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> Control Hazard </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none"> Handling Control Hazard </div>
+
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900"> 
+              <div class="flex items-center justify-center h-full select-none">
+              An instruction attempts to use data before it is ready.
+              </div>
+            </div>
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
+              <div class="flex items-center justify-center h-full select-none">
+              Stalling - Waiting for an instruction to execute properly. <br/>
+              Forwarding - (Ex-Ex), (Mem-Ex), and (Mem-Mem).
+              </div>
+            </div>
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
+              <div class="flex items-center justify-center h-full select-none">
+              A hazard that occurs when waiting for the value in the PC register to be ready
+              </div>
+            </div>
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
+              <div class="flex items-center justify-center h-full select-none">
+              Stall/Flushing: Instruction enters pipeline, replaced by nop. <br/>
+              Moving branch target calculation: Compute target address, evaluate branch. <br/>
+              Delay Slot: Execute instructions regardless of branch outcome.
+              </div>
+            </div>
+
           </div>
 
           {/* ----- Chapter 5 Topics ----- */}
+
+          <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 col-span-4 select-none"> Chapter 5 - Memory Hierarchy </div>
+
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none"> Memory Layout (Smallest to Largest) </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none"> Temporal Locality </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none"> Spatial Locality </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none"> Cache Organization </div>
+
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900"> 
+              <div class="flex items-center justify-center h-full select-none">
+              Register File -&gt; Level-1 (L1) Cache -&gt; Level-2 (L2) Cache -&gt; D-RAM -&gt; Disk <br/>
+              (L to R) - Size Increases and Speed Decreases.
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div class="flex items-center justify-center h-full select-none">
+              Occurences in programs where: <br/>
+              (1) More locality if same value is accessed many times. <br/>
+              (2) More locality if many values are accessed a few times. <br/>
+              Goal: Keep most recently accessed data items closer to the processor
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div class="flex items-center justify-center h-full select-none">
+              Occurences in programs where: <br/>
+              More locality if accessing many nearby values. <br/>
+              Goal: Move blocks consisting of contiguous words closer to the processor.
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div class="flex items-center justify-center h-full select-none">
+              Blocks - Entries in a cache. <br/>
+              Index - Location & uniquely identifies data in a cache.  <br/>
+              Tag - Uniquely identifies a memory location.
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none"> ... </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none"> ... </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none"> ... </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none"> ... </div>
+
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900"> 
+              <div class="flex items-center justify-center h-full select-none">
+              Lorem Ipsum....
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div class="flex items-center justify-center h-full select-none">
+              Lorem Ipsum....
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div class="flex items-center justify-center h-full select-none">
+              Lorem Ipsum....
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div class="flex items-center justify-center h-full select-none">
+              Lorem Ipsum....
+              </div>
+            </div>
+
+          </div>
+          
 
           {/* ----- Chapter 6 Topics ----- */}
 
