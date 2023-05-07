@@ -3,7 +3,7 @@ import Navigation from "@/components/navigation";
 import React, { useState, useEffect } from "react";
 import QuizView from "@/components/quizView";
 import ScoreView from "@/components/scoreView";
-import questions from "@/constants/quiz_content";
+import cacheQuiz from "@/constants/quiz_content";
 import IncorrectQuestionsView from "@/components/incorrectQuestionView";
 
 export default function Quizzes() {
@@ -14,66 +14,51 @@ export default function Quizzes() {
   const [viewIncorrectQuestions, setViewIncorrectQuestions] = useState(false);
   const [score, setScore] = useState(0);
   const [incorrectQuestions, setIncorrectQuestions] = useState([]);
-
-  async function onSubmit(event) {
-    event.preventDefault();
-    try {
-      const response = await fetch("/api/generate", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ animal: animalInput }),
-      });
-
-      const data = await response.json();
-      if (response.status !== 200) {
-        throw (
-          data.error ||
-          new Error(`Request failed with status ${response.status}`)
-        );
-      }
-
-      setResult(data.result);
-      setAnimalInput("");
-    } catch (error) {
-      // Consider implementing your own error handling logic here
-      console.error(error);
-      alert(error.message);
-    }
-  }
+  const [selectedQuizType, setSelectedQuizType] = useState("");
 
   const handleAnswerClick = (isCorrect) => {
-    // check score
+    const selectedQuizQuestions = getQuestionsForSelectedQuizType();
     if (isCorrect) {
       setScore(score + 1);
     } else {
       setIncorrectQuestions([
         ...incorrectQuestions,
-        questions[currentQuestion],
+        selectedQuizQuestions[currentQuestion],
       ]);
     }
-
     const next = currentQuestion + 1;
-    if (next < questions.length) {
+    if (next < selectedQuizQuestions.length) {
       setCurrentQuestion(next);
     } else {
       setIsQuizOver(true);
     }
   };
-  // Perform string conversions here
+
   const incorrectQuestionsText = incorrectQuestions.map((q) => q.question);
   const incorrectQuestionsString = incorrectQuestionsText.join(" | ");
 
-  // Now you can use the `incorrectQuestionsString` for the API call or any other purpose
   console.log(incorrectQuestionsString);
 
   const handleResetClick = () => {
-    // fix: score not resetting
     setScore(0);
     setIncorrectQuestions([]);
     setCurrentQuestion(0);
     setIsQuizOver(false);
+  };
+
+  const handleQuizTypeSelection = (quizType) => {
+    setSelectedQuizType(quizType);
+  };
+
+  const getQuestionsForSelectedQuizType = () => {
+    switch (selectedQuizType) {
+      case "cacheQuiz":
+        return cacheQuiz;
+      case "processorDatapathQuiz":
+        return processorDatapathQuizQuestions;
+      default:
+        return [];
+    }
   };
 
   return (
@@ -88,21 +73,26 @@ export default function Quizzes() {
         <div className="bg-medium bg-fixed bg-center bg-cover min-h-screen">
           <Navigation />
           <div className="h-40"></div>
-          <h3>Name my pet</h3>
-          <form onSubmit={onSubmit}>
-            <input
-              type="text"
-              name="animal"
-              placeholder="Enter an animal"
-              value={animalInput}
-              onChange={(e) => setAnimalInput(e.target.value)}
-            />
-            <input type="submit" value="Generate names" />
-          </form>
-          <div>{result}</div>
-          <div className="h-12"></div>
           <div className="flex justify-center">
-            {viewIncorrectQuestions ? (
+            {selectedQuizType === "" ? (
+              <div className="p-6 border border-slate-500 rounded-3xl text-center w-full mx-2 sm:w-3/4 lg:w-1/2 bg-slate-900 backdrop-blur-lg bg-opacity-40 text-slate-300">
+                <h2 className="text-xl font-bold mb-4">Quizzes</h2>
+                <button
+                  className="border w-4/5 rounded-lg border-slate-400 mx-auto mt-2 p-2 hover:border-sky-300 hover:text-sky-300 hover:font-bold hover:border-2"
+                  onClick={() => handleQuizTypeSelection("cacheQuiz")}
+                >
+                  Caches
+                </button>
+                <button
+                  className="border w-4/5 rounded-lg border-slate-400 mx-auto mt-2 p-2 hover:border-sky-300 hover:text-sky-300 hover:font-bold hover:border-2"
+                  onClick={() =>
+                    handleQuizTypeSelection("processorDatapathQuiz")
+                  }
+                >
+                  Processor Datapath
+                </button>
+              </div>
+            ) : viewIncorrectQuestions ? (
               <IncorrectQuestionsView incorrectQuestions={incorrectQuestions} />
             ) : isQuizOver ? (
               <ScoreView
@@ -112,7 +102,7 @@ export default function Quizzes() {
               />
             ) : (
               <QuizView
-                questions={questions}
+                questions={getQuestionsForSelectedQuizType()}
                 currentQuestion={currentQuestion}
                 handleAnswerClick={handleAnswerClick}
               />
