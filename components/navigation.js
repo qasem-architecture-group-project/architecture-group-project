@@ -16,7 +16,7 @@ export default function Navigation() {
     <div className="bg-header-main">
       <header className="absolute inset-x-0 top-0 z-50 bg-header-main">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8"
+          className="flex  items-center justify-between p-6 lg:px-8"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
@@ -50,12 +50,9 @@ export default function Navigation() {
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <div
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            ></div>
-          </div>
+
+          
+
         </nav>
         <Dialog
           as="div"

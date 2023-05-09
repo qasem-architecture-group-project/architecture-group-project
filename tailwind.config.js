@@ -13,6 +13,12 @@ module.exports = {
         'main-img': '#161A2C'
 
       },
+      backgroundImage: {
+        'hero-pattern': "url('/bavj.png')",
+        'flash-image': "url('/flashcardImage.png')",
+        'linux-image': "url('/linuximage.png')",
+        'quiz-image': "url('/quizimage.png')",
+      },
       fontFamily: {
         'owners': ['owners', 'sans-serif'],
       },

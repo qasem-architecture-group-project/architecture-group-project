@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navigation from "@/components/navigation";
 
+
 export default function Home() {
   return (
     <>
@@ -19,7 +20,9 @@ export default function Home() {
           <div class="mt-20 p-5 w-screen h-90 bg-background-main" > 
 
             <div class=" bg-main-img w-auto h-[35rem] rounded-3xl flex justify-center ">
-              <div class="flex flex-col grid content-center" > 
+             
+              <div class="bg-hero-pattern bg-cover  w-full  flex flex-col grid justify-center content-center" > 
+              
                 <div>
                   <p class="text-white font-owners text-6xl" > learn and improve</p>
                 </div>
@@ -31,8 +34,8 @@ export default function Home() {
                 </div>
                 
               </div>
-            </div>
 
+            </div>
             <div class="w-full h-1 bg-header-main mt-4"> </div>
           </div>
 
@@ -51,12 +54,8 @@ export default function Home() {
               </div>
 
               <div class=" bg-main-img w-full h-[25rem] rounded-3xl flex justify-center ml-2">
-                <div class="flex flex-col grid content-center" > 
-                  <div>
-                    <p class="text-white font-owners text-6xl" > learn and improve</p>
-                  </div>
-                 
-                  
+                <div class="bg-linux-image bg-contain bg-center bg-no-repeat  w-full">
+
                 </div>
               </div>
 
@@ -67,21 +66,13 @@ export default function Home() {
 
 
 
-
-
-
-
-
           <div class=" pr-5 pb-5 pl-5 w-screen h-90 bg-background-main" > 
 
             <div class="flex flex-row"> 
 
               <div class=" bg-main-img w-full h-[25rem] rounded-3xl flex justify-center mr-2">
-                <div class="flex flex-col grid content-center" > 
-                  <div>
-                    <p class="text-white font-owners text-6xl" > learn and improve</p>
-                  </div>
-                </div>
+                <div class="bg-flash-image bg-contain bg-center bg-no-repeat  w-full">
+                </div>  
               </div>
 
               <div class=" bg-header-main w-[60rem] h-[25rem] rounded-3xl flex justify-center ml-2">
@@ -113,12 +104,8 @@ export default function Home() {
               </div>
 
               <div class=" bg-main-img w-full h-[25rem] rounded-3xl flex justify-center ml-2">
-                <div class="flex flex-col grid content-center" > 
-                  <div>
-                    <p class="text-white font-owners text-6xl" > learn and improve</p>
-                  </div>
-                
-                  
+                <div class="bg-quiz-image bg-contain bg-center bg-no-repeat  w-full">
+
                 </div>
               </div>
 
