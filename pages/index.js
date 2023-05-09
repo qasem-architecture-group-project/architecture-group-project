@@ -26,8 +26,11 @@ export default function Home() {
                 <div>
                   <p class="text-white font-owners text-6xl" > learn and improve</p>
                 </div>
-                <div>
-                  <p class="text-white font-owners text-6xl" > your linux and core computing </p>
+                <div class="flex flex-row" >
+                  <p class="text-white font-owners text-6xl" > your </p>
+                  <p class="text-main-orange font-owners text-6xl ml-2"> linux </p>
+                  <p class="text-white font-owners text-6xl ml-2"> and </p> 
+                  <p class="text-main-orange font-owners text-6xl ml-2"> core computing </p> 
                 </div>
                 <div>
                   <p class="text-white font-owners text-6xl" > knowledge </p>
@@ -47,8 +50,11 @@ export default function Home() {
 
               <div class=" bg-header-main w-[60rem] h-[25rem] rounded-3xl flex justify-center mr-2">
                 <div class="flex flex-col grid content-center" > 
-                  <div>
-                    <p class="text-white font-owners text-6xl" > learn and improve</p>
+                  <div class="p-10">
+                    <p class="text-main-orange font-owners text-6xl" > Linux </p>
+                    <p class="text-white text-2xl">Embark on your Linux journey with our beginner-friendly tutorial series. 
+                      We'll guide you through the fundamentals of this powerful operating system,
+                       equipping you with the essential knowledge to confidently navigate the Linux environment.</p>
                   </div>
                 </div>
               </div>
@@ -77,8 +83,11 @@ export default function Home() {
 
               <div class=" bg-header-main w-[60rem] h-[25rem] rounded-3xl flex justify-center ml-2">
                 <div class="flex flex-col grid content-center" > 
-                  <div>
-                    <p class="text-white font-owners text-6xl" > learn and improve</p>
+                  <div class="p-10" >
+                    <p class="text-main-orange font-owners text-6xl" > Flashcards</p>
+                    <p class="text-white text-2xl">Reinforce your learning with our interactive flashcards. 
+                      These expertly-crafted study aids cover essential computer architecture concepts,
+                       enabling you to absorb and retain information more effectively.</p>
                   </div>
                 </div>
               </div>
@@ -97,8 +106,11 @@ export default function Home() {
 
               <div class=" bg-header-main w-[60rem] h-[25rem] rounded-3xl flex justify-center mr-2">
                 <div class="flex flex-col grid content-center" > 
-                  <div>
-                    <p class="text-white font-owners text-6xl" > learn and improve</p>
+                  <div class="p-10" >
+                    <p class="text-main-orange font-owners text-6xl" > Quizzes</p>
+                    <p  class="text-white text-2xl" >Put your knowledge to the test with our engaging quizzes. 
+                      Challenge yourself with a wide range of questions, tailored to suit various skill levels,
+                       and track your progress as you delve deeper into the world of computer architecture</p>
                   </div>
                 </div>
               </div>
@@ -112,34 +124,7 @@ export default function Home() {
             </div>
             <div class="w-full h-1 bg-header-main mt-4"> </div>
           </div>
-          
-
-          <div class=" pr-5 pb-5 pl-5 w-screen h-90 bg-background-main" > 
-
-            <div class=" bg-main-img w-auto h-[35rem] rounded-3xl flex justify-center ">
-              <div class="flex flex-col grid content-center" > 
-                <div>
-                  <p class="text-white font-owners text-6xl" > learn and improve</p>
-                </div>
-                <div>
-                  <p class="text-white font-owners text-6xl" > your linux and core computing </p>
-                </div>
-                <div>
-                  <p class="text-white font-owners text-6xl" > knowledge </p>
-                </div>
-                
-              </div>
-            </div>
-
-            <div class="w-full h-1 bg-header-main mt-4"> </div>
-            
-          </div>
-
-
-
-
-
-
+        
         </div> 
       </main>
     </>

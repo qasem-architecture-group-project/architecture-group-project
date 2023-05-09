@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         'background-main': '#202740',
         'header-main': '#333C5D',
-        'main-img': '#161A2C'
+        'main-img': '#161A2C',
+        'main-orange': '#FFAB38'
 
       },
       backgroundImage: {
