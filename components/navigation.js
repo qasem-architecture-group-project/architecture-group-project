@@ -15,6 +15,7 @@ export default function Navigation() {
   return (
     <div className="bg-header-main">
       <header className="absolute inset-x-0 top-0 z-50 bg-header-main">
+
         <nav
           className="flex  items-center justify-between p-6 lg:px-8"
           aria-label="Global"

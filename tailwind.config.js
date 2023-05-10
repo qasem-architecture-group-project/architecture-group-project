@@ -19,9 +19,11 @@ module.exports = {
         'flash-image': "url('/flashcardImage.png')",
         'linux-image': "url('/linuximage.png')",
         'quiz-image': "url('/quizimage.png')",
+        'pink-purple': "url('/caProjectBackground.jpg')",
       },
       fontFamily: {
         'owners': ['owners', 'sans-serif'],
+
       },
     },
   },

@@ -12,173 +12,1098 @@ export default function Flashcards() {
       </Head>
       <main>
         <div>
-          <Navigation /> 
+          <Navigation />
 
           {/* ----- Chapter 1 Topics ----- */}
 
           <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
-            <div className="border-4 font-bold bg-blue-300 border-blue-500 col-span-4 select-none"> Chapter 1 - Performance Evaluation </div>
+            <div className="border-4 font-bold bg-blue-300 border-blue-500 col-span-4 select-none">
+              {" "}
+              Chapter 1 - Performance Evaluation{" "}
+            </div>
 
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Amdahl's Law </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Moore's Law </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Performance = ... </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Execution Time </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Amdahl's Law{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Moore's Law{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Dennard Scaling{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Execution Time{" "}
+            </div>
 
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900"> 
-              <div class="flex items-center justify-center h-full select-none">
-                The overall speedup is limited by the amount of parallelism applied in a program. 
-              </div> 
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div className="flex items-center justify-center h-full select-none">
+                The overall speedup is limited by the amount of parallelism
+                applied in a program.
+              </div>
             </div>
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
-              <div class="flex items-center justify-center h-full select-none">
-                The number of transistors on a single chip doubles every ~18 months. 
-              </div>    
+              <div className="flex items-center justify-center h-full select-none">
+                The number of transistors on a single chip doubles every ~18
+                months.
+              </div>
             </div>
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
-              <div class="flex items-center justify-center h-full select-none">
+              <div className="flex items-center justify-center h-full select-none">
+                The relationship between the processor area and power.
+              </div>
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div className="flex items-center justify-center h-full select-none">
+                The time between the start and the completion of a task. <br />
+                Nicknames: Response Time, Wall Clock Time
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Performance = ...{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Power Wall{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Multicore Processors{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Clock Cycle Time{" "}
+            </div>
+
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div className="flex items-center justify-center h-full select-none">
                 1 / Execution_Time <br />
-                The performance of your program will be inversely proportional to the execution time of your program. 
-              </div>    
-            </div>
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
-              <div class="flex items-center justify-center h-full select-none">
-                The time between the start and the completion of a task.
-              </div>                
-            </div>
-
-            {/* ----- Chapter 2 Topics ----- */}
-
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Dennard Scaling </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Power Wall </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Multicore Processors </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> Space v Performance Trade-offs </div>
-
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900"> 
-              <div class="flex items-center justify-center h-full select-none">
-                Explained that there's a relationship between the processor area and power.
-              </div>    
-            </div>
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
-              <div class="flex items-center justify-center h-full select-none">
-                Speed discrepancy between the CPU and Memory/RAM.
-              </div>  
-            </div>
-            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
-              <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+                The performance of your program will be inversely proportional
+                to the execution time of your program.
               </div>
             </div>
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
-              <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+              <div className="flex items-center justify-center h-full select-none">
+                Rising heat in the small area of a CPU chip after reaching the
+                2006 threshold based on Dennard Scaling.
+              </div>
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Chips that consists of mulitple processors. <br />
+                Power Threshold met in 2006 by Dennard Scaling - increase in
+                power wall. Multicore processors prevent heat from building in
+                the processor.
+              </div>
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Length of a clock tick, the minimum unit of time that the system
+                can measure. <br />
+                Nicknames: clock tick, clock cycle, and clock rate.
               </div>
             </div>
 
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> ... </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> ... </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> ... </div>
-            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none"> ... </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              CPI - Cycles Per Instruction{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Static Instruction Count{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Dynamic Instruction Count{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              CPU Time = ...{" "}
+            </div>
 
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
-              <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+              <div className="flex items-center justify-center h-full select-none">
+                Average clock time for each cycle per instruction.
               </div>
             </div>
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
-              <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+              <div className="flex items-center justify-center h-full select-none">
+                Assembly instructions that appear once.
               </div>
             </div>
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
-              <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+              <div className="flex items-center justify-center h-full select-none">
+                Assembly instructions (k total) translated as machine
+                instruction appearing n*k times, where n is the number of times
+                it appears.
               </div>
             </div>
             <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
-              <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+              <div className="flex items-center justify-center h-full select-none">
+                Primary metric used to evaluate CPU performance.
+                <br />
+                ... = Instruction Count * CPI * Clock Cycle Time.
+                <br />
+                ... = (instructions/program) * (cycles/instruction) *
+                (seconds/cycle).
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Throughput{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              FLOPs{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Speedup = ...{" "}
+            </div>
+            <div className="border-4 font-bold bg-blue-300 border-sky-500 select-none">
+              {" "}
+              Relative Performance = ...{" "}
+            </div>
+
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div className="flex items-center justify-center h-full select-none">
+                # of tasks per unit time, total amount of work done in a given
+                time, nickname: bandwidth. <br />
+                Throughput = # of processes completed / time
+              </div>
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Floating-point operations per second. Throughput Metric.
+              </div>
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div className="flex items-center justify-center h-full select-none">
+                ... = ExecTime(Old)/ExecTime(New). <br />
+                Speedup &gt; 1 is good, &lt; 1 is bad, never 0.
+              </div>
+            </div>
+            <div className="border-4 border-sky-500 hover:bg-opacity-0 transition duration: 0 h-32 text-blue-900 bg-blue-900">
+              <div className="flex items-center justify-center h-full select-none">
+                ... = Performance(x)/Performance(y) <br /> =
+                ExecTime(y)/ExecTime(x) = n.
               </div>
             </div>
           </div>
 
+          {/* ----- Chapter 2 Topics ----- */}
+
           <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
-            <div className="border-4 font-bold bg-purple-300 border-purple-500 col-span-4 select-none"> Chapter 2 - ISA Introduction </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 col-span-4 select-none">
+              {" "}
+              Chapter 2 - ISA Introduction{" "}
+            </div>
 
-            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Dennard Scaling </div>
-            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Performance </div>
-            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Execution Time </div>
-            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Amdahl's Law </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              ISA{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Accumulator{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Stack Machine{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Von Neumann Architecture{" "}
+            </div>
 
-            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 h-32 text-purple-900 bg-purple-900"> 
-              <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Instruction Set Architecture, essentially acting as a contract
+                between the programmer and the hardware.
               </div>
             </div>
             <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 h-32 text-purple-900 bg-purple-900">
-              <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+              <div className="flex items-center justify-center h-full select-none">
+                Nickname: One-Instruction/Operand Architecture. <br />
+                Special memory location (register) serving as a source operand
+                and destination location.
               </div>
             </div>
             <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 h-32 text-purple-900 bg-purple-900">
-              <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+              <div className="flex items-center justify-center h-full select-none">
+                Contains a stack as part of the processor state.
               </div>
             </div>
             <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 h-32 text-purple-900 bg-purple-900">
-              <div class="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
+              <div className="flex items-center justify-center h-full select-none">
+                A type of computer architecutre where data travels between RAM
+                and the CPU.
               </div>
             </div>
 
-            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Dennard Scaling </div>
-            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Performance </div>
-            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Execution Time </div>
-            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none"> Amdahl's Law </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              ALU Instruction{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Load Instruction{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Store Instruction{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Branch Instruction{" "}
+            </div>
 
-            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900"> 
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
               <div className="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
-              </div>            
+                Arithmetic and Logic Operations.
+              </div>
             </div>
             <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
               <div className="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
-              </div>                
+                Moves a value in a register to RAM.
+              </div>
             </div>
             <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
               <div className="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
-              </div>     
+                Moves a value in RAM to a register.
+              </div>
             </div>
             <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
               <div className="flex items-center justify-center h-full select-none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
-                nihil assumenda doloribus voluptas eaque praesentium sequi
-              </div>     
+                Coordinates the location of a program, manipulates the program
+                counter.
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Variable-Length Encoding{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Fixed-Length Encoding{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Multi-length Instruction Encoding{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Addressing Modes{" "}
+            </div>
+
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Use only the bits that is required for each instruction.
+                Instructions can give efficient encodings, but can make fast
+                implementation difficult.
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                A fixed amount of bits to represent an instruction. Most
+                commonly used in encoding since memory is cheap and essential
+                for both pipelining and superscalar systems.
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                A compromise between variable-length and fixed-length encoding.
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                A set of rules determining how a processor accesses memory to
+                fetch operands or store results during the execution of a
+                program.
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Direct Addressing{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Indirect/Relative Addressing{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Immediate Addressing{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              ALU Instruction & MIPS Format{" "}
+            </div>
+
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Direct addressing is an addressing mode in computer programming
+                where the operand is accessed directly from a memory location
+                specified by the instruction.
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Access instructions and data using an offset from a common base
+                address. The base address is stored in specialized registers
+                (e.g.: SP, PC, etc.).
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                An addressing mode where the operand is expressed as a constant
+                value embedded within the instruction.
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Instruction that performs mathematical and logical operations.{" "}
+                <br />
+                Opcode | Dest_Reg | Src_Reg | Src_Reg | Unused
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Load Instruction & MIPS Format{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Store Instruction & MIPS Format{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Branch Instruction & MIPS Format{" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Jump Instruction{" "}
+            </div>
+
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Instruction that transfers data from D-RAM + offset to a
+                destination register. <br />
+                Opcode | Dest_Reg | Src_Reg | Offset
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Instruction that transfers data from a source register to D-RAM
+                + offset. <br />
+                Opcode | Dest_Reg | Src_Reg | Offset
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Instruction that compares two source registers based on the
+                condition of the opcode and branches to a target address. Opcode
+                | Src_Reg | Src_Reg | Target_Addr
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Instruction that branches to a target address. Opcode |
+                Target_Addr
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-white border-white select-none"></div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Stack Pointer (SP){" "}
+            </div>
+            <div className="border-4 font-bold bg-purple-300 border-purple-500 select-none">
+              {" "}
+              Program Counter(PC){" "}
+            </div>
+            <div className="border-4 font-bold bg-white border-white select-none"></div>
+
+            <div className="border-4 border-white hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-white bg-white">
+              <div className="flex items-center justify-center h-full select-none"></div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Special register that stores a base address.
+              </div>
+            </div>
+            <div className="border-4 border-purple-500 hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-purple-900 bg-purple-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Special register that stores the offset as an immediate in
+                branch and jump instructions.
+              </div>
+            </div>
+            <div className="border-4 border-white hover:bg-opacity-0 transition duration: 0 ease-in-out h-32 text-white bg-white">
+              <div className="flex items-center justify-center h-full select-none"></div>
             </div>
           </div>
 
           {/* ----- Chapter 3 Topics ----- */}
 
+          <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
+            <div className="border-4 font-bold bg-green-300 border-green-500 col-span-4 select-none">
+              {" "}
+              Chapter 3 - Computer Arithmetic{" "}
+            </div>
+
+            <div className="border-4 font-bold bg-green-300 border-green-500 select-none">
+              {" "}
+              Signed Binary{" "}
+            </div>
+            <div className="border-4 font-bold bg-green-300 border-green-500 select-none">
+              {" "}
+              Hardware Logic Operations{" "}
+            </div>
+            <div className="border-4 font-bold bg-green-300 border-green-500 select-none">
+              {" "}
+              Overflow{" "}
+            </div>
+            <div className="border-4 font-bold bg-green-300 border-green-500 select-none">
+              {" "}
+              Overflow Occurences{" "}
+            </div>
+
+            <div className="border-4 border-green-500 hover:bg-opacity-0 transition duration: 0 h-32 text-green-900 bg-green-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Commonly expressed in 2's complement.
+              </div>
+            </div>
+            <div className="border-4 border-green-500 hover:bg-opacity-0 transition duration: 0 h-32 text-green-900 bg-green-900">
+              <div className="flex items-center justify-center h-full select-none">
+                OR (X + Y) <br />
+                AND (X * Y) <br />
+                XOR (!X)
+              </div>
+            </div>
+            <div className="border-4 border-green-500 hover:bg-opacity-0 transition duration: 0 h-32 text-green-900 bg-green-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Occurs when the result of an operation cannot be represented
+                with the number of bits in the destination register.
+              </div>
+            </div>
+            <div className="border-4 border-green-500 hover:bg-opacity-0 transition duration: 0 h-32 text-green-900 bg-green-900">
+              <div className="flex items-center justify-center h-full select-none">
+                For integer and floating-point operations <br />
+                For signed and unsigned operations <br />
+                For addition, subtraction, multiplication, division
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-green-300 border-green-500 select-none">
+              {" "}
+              Floating-Point Representation{" "}
+            </div>
+            <div className="border-4 font-bold bg-green-300 border-green-500 select-none">
+              {" "}
+              Single and Double Precision - Format{" "}
+            </div>
+            <div className="border-4 font-bold bg-green-300 border-green-500 select-none">
+              {" "}
+              Range v Precision{" "}
+            </div>
+            <div className="border-4 font-bold bg-green-300 border-green-500 select-none">
+              {" "}
+              Associativity{" "}
+            </div>
+            <div className="border-4 border-green-500 hover:bg-opacity-0 transition duration: 0 h-32 text-green-900 bg-green-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Defined by IEEE Std 754-1985 - Meant to give a single
+                representation of floating point values.
+              </div>
+            </div>
+            <div className="border-4 border-green-500 hover:bg-opacity-0 transition duration: 0 h-32 text-green-900 bg-green-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Floating Point Representation (Single/Double): <br />
+                S(1 or 0) | Exponent(8/11) | Fraction(23/52) <br />
+                Interpretation: <br />
+                (-1)^s * (1 + Fraction * 2^(Exponent - Bias))
+              </div>
+            </div>
+            <div className="border-4 border-green-500 hover:bg-opacity-0 transition duration: 0 h-32 text-green-900 bg-green-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Range: More bits in the exponent (E) =&gt; increases size of the
+                number being represented <br />
+                Precision: more bits in the fraction (F) =&gt; more accuracy is
+                produced.
+              </div>
+            </div>
+            <div className="border-4 border-green-500 hover:bg-opacity-0 transition duration: 0 h-32 text-green-900 bg-green-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Important to consider in floating-point operations. x =
+                -1.50E+38 | y = 1.50E+38 | z = 1.00 <br />
+                (x + y) + z = 0.00 + 1.00 = 1.00 <br />x + (y + z) = -1.50E+38 +
+                1.50E+38 = 0.00
+              </div>
+            </div>
+          </div>
+
           {/* ----- Chapter 4 Topics ----- */}
+
+          <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 col-span-4 select-none">
+              {" "}
+              Chapter 4.1 - Datapath Processor{" "}
+            </div>
+
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none">
+              {" "}
+              Datapath Elements{" "}
+            </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none">
+              {" "}
+              Pipelining - Purpose{" "}
+            </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none">
+              {" "}
+              Pipelining Layout in MIPS{" "}
+            </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none">
+              {" "}
+              Structural Hazard{" "}
+            </div>
+
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Registers - Special Registers: PC, SP, and Zero. <br />
+                Register File, ALU, <br />
+                Multiplexer (MUX), <br />
+                and Instruction, and Data Memory.
+              </div>
+            </div>
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Break up tasks into smaller subtasks. <br />
+                Bind subtasks to available resources.
+              </div>
+            </div>
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Instruction Fetch (IF), Instruction Decode (ID), Execute (EX),
+                Memory (MEM), and Write Back(WB).
+              </div>
+            </div>
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Two different instructions attempt to use the same resource at
+                the same time.
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none">
+              {" "}
+              Data Hazard{" "}
+            </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none">
+              {" "}
+              Handling Data Hazard{" "}
+            </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none">
+              {" "}
+              Control Hazard{" "}
+            </div>
+            <div className="border-4 font-bold bg-indigo-300 border-indigo-500 select-none">
+              {" "}
+              Handling Control Hazard{" "}
+            </div>
+
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
+              <div className="flex items-center justify-center h-full select-none">
+                An instruction attempts to use data before it is ready.
+              </div>
+            </div>
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Stalling - Waiting for an instruction to execute properly.{" "}
+                <br />
+                Forwarding - (Ex-Ex), (Mem-Ex), and (Mem-Mem).
+              </div>
+            </div>
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
+              <div className="flex items-center justify-center h-full select-none">
+                A hazard that occurs when waiting for the value in the PC
+                register to be ready
+              </div>
+            </div>
+            <div className="border-4 border-indigo-500 hover:bg-opacity-0 transition duration: 0 h-32 text-indigo-900 bg-indigo-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Stall/Flushing: Instruction enters pipeline, replaced by nop.{" "}
+                <br />
+                Moving branch target calculation: Compute target address,
+                evaluate branch. <br />
+                Delay Slot: Execute instructions regardless of branch outcome.
+              </div>
+            </div>
+          </div>
+
+          <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
+            <div className="border-4 font-bold bg-[#de98ff] border-[#be33ff] col-span-4 select-none">
+              {" "}
+              Chapter 4.2 - The Processor{" "}
+            </div>
+
+            <div className="border-4 font-bold bg-[#de98ff] border-[#be33ff] select-none">
+              {" "}
+              Superscalar{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#de98ff] border-[#be33ff] select-none">
+              {" "}
+              VLIW{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#de98ff] border-[#be33ff] select-none">
+              {" "}
+              In-order issue, in-order completion{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#de98ff] border-[#be33ff] select-none">
+              {" "}
+              In-order issue, out-of-order completion{" "}
+            </div>
+
+            <div className="border-4 border-[#be33ff] hover:bg-opacity-0 transition duration: 0 h-32 text-[#501e68] bg-[#501e68]">
+              <div className="flex items-center justify-center h-full select-none">
+                Dynamic multiple-issue processors <br />
+                Decisions on instructions to execute simultaneously are made
+                dynamically at run time by the hardware.
+              </div>
+            </div>
+            <div className="border-4 border-[#be33ff] hover:bg-opacity-0 transition duration: 0 h-32 text-[#501e68] bg-[#501e68]">
+              <div className="flex items-center justify-center h-full select-none">
+                Static multiple-issue processors <br />
+                Decisions about which instructions to execute in parallel are
+                made statically by the compiler.
+              </div>
+            </div>
+            <div className="border-4 border-[#be33ff] hover:bg-opacity-0 transition duration: 0 h-32 text-[#501e68] bg-[#501e68]">
+              <div className="flex items-center justify-center h-full select-none">
+                An execution model where instructions are retrieved and executed
+                sequentially.
+              </div>
+            </div>
+            <div className="border-4 border-[#be33ff] hover:bg-opacity-0 transition duration: 0 h-32 text-[#501e68] bg-[#501e68]">
+              <div className="flex items-center justify-center h-full select-none">
+                An execution model where instructions are are retrieved
+                sequentially, but are executed in various orders.
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-[#de98ff] border-[#be33ff] select-none">
+              {" "}
+              Out-of-order issue, out-of-order completion{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#de98ff] border-[#be33ff] select-none">
+              {" "}
+              True Data Dependence{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#de98ff] border-[#be33ff] select-none">
+              {" "}
+              Anti Data Dependence{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#de98ff] border-[#be33ff] select-none">
+              {" "}
+              Output Data Dependence{" "}
+            </div>
+
+            <div className="border-4 border-[#be33ff] hover:bg-opacity-0 transition duration: 0 h-32 text-[#501e68] bg-[#501e68]">
+              <div className="flex items-center justify-center h-full select-none">
+                An execution model where instructions are are retrieved and
+                executed in various orders.
+              </div>
+            </div>
+            <div className="border-4 border-[#be33ff] hover:bg-opacity-0 transition duration: 0 h-32 text-[#501e68] bg-[#501e68]">
+              <div className="flex items-center justify-center h-full select-none">
+                Read after write (RAW) <br />
+                S1 writes to M <br />
+                S2 reads from M <br />
+                S2 must execute after S1
+              </div>
+            </div>
+            <div className="border-4 border-[#be33ff] hover:bg-opacity-0 transition duration: 0 h-32 text-[#501e68] bg-[#501e68]">
+              <div className="flex items-center justify-center h-full select-none">
+                Write after read (WAR) <br />
+                S1 reads from X <br />
+                S2 writes to X <br />
+                S2 must execute after S1
+              </div>
+            </div>
+            <div className="border-4 border-[#be33ff] hover:bg-opacity-0 transition duration: 0 h-32 text-[#501e68] bg-[#501e68]">
+              <div className="flex items-center justify-center h-full select-none">
+                Write before write (WAW) <br />
+                S1 writes to X <br />
+                S2 writes to X <br />
+                S2 must execute after S1
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-white border-white select-none"></div>
+            <div className="border-4 font-bold bg-[#de98ff] border-[#be33ff] select-none">
+              {" "}
+              Hyperthreading{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#de98ff] border-[#be33ff] select-none">
+              {" "}
+              SMT{" "}
+            </div>
+            <div className="border-4 font-bold bg-white border-white select-none"></div>
+
+            <div className="border-4 border-white hover:bg-opacity-0 transition duration: 0 h-32 text-white bg-white">
+              <div className="flex items-center justify-center h-full select-none"></div>
+            </div>
+            <div className="border-4 border-[#be33ff] hover:bg-opacity-0 transition duration: 0 h-32 text-[#501e68] bg-[#501e68]">
+              <div className="flex items-center justify-center h-full select-none">
+                Concept of running multiple processes (or programs) where the OS
+                is coordiating what process is executed. <br />
+                Task for OS: As a program goes through an I/O request
+                (context-switch), the processor can run another program.
+              </div>
+            </div>
+            <div className="border-4 border-[#be33ff] hover:bg-opacity-0 transition duration: 0 h-32 text-[#501e68] bg-[#501e68]">
+              <div className="flex items-center justify-center h-full select-none">
+                Concept of enabling multiple threads to be executed
+                simultaneously on a single processor core.
+              </div>
+            </div>
+            <div className="border-4 border-white hover:bg-opacity-0 transition duration: 0 h-32 text-white bg-white">
+              <div className="flex items-center justify-center h-full select-none"></div>
+            </div>
+          </div>
 
           {/* ----- Chapter 5 Topics ----- */}
 
+          <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 col-span-4 select-none">
+              {" "}
+              Chapter 5 - Memory Hierarchy{" "}
+            </div>
+
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Memory Layout (Smallest to Largest){" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Temporal Locality{" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Spatial Locality{" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Cache Organization{" "}
+            </div>
+
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Register File -&gt; Level-1 (L1) Cache -&gt; Level-2 (L2) Cache
+                -&gt; D-RAM -&gt; Disk <br />
+                (L to R) - Size Increases and Speed Decreases.
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Occurences in programs where: <br />
+                (1) More locality if same value is accessed many times. <br />
+                (2) More locality if many values are accessed a few times.{" "}
+                <br />
+                Goal: Keep most recently accessed data items closer to the
+                processor
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Occurences in programs where: <br />
+                More locality if accessing many nearby values. <br />
+                Goal: Move blocks consisting of contiguous words closer to the
+                processor.
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Blocks - Entries in a cache. <br />
+                Index - Location & uniquely identifies data in a cache. <br />
+                Tag - Uniquely identifies a memory location.
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Hit Rate{" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Hit Time{" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Miss Rate{" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Miss Penalty{" "}
+            </div>
+
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                The fraction of memory accesses found in cache during a program
+                execution.
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Time to access value from cache.
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                The fraction of memory accesses not found in a level of the
+                memory hierarchy. <br />
+                Miss Rate = 1 - (Hit Rate)
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Time to replace a block in cache with the corresponding block
+                from a lower level.
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Compulsory Miss{" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Capacity Miss{" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Conflict Miss{" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Virtual Memory{" "}
+            </div>
+
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                A type of miss that occurs when you're retrieving a memory
+                address from D-RAM for the first time.
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                A type of miss that occurs when data accessed between two
+                references to the same memory location M exceeds cache capacity,
+                causing a miss on the second reference to M.
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                A type of miss where two memory locations M and M' map to the
+                same cache block, so M' evicts M before the second reference to
+                M.
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                The concept of using main memory as a “cache” for secondary
+                memory, the hard disk.
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Page Table{" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Page Fault{" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              Address Translation{" "}
+            </div>
+            <div className="border-4 font-bold bg-cyan-300 border-cyan-500 select-none">
+              {" "}
+              TLB{" "}
+            </div>
+
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Contains VPN to PPN mappings. Resides in main memory and is
+                maintained by OS.
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                A scenario that occurs when the the page is not in main memory
+                and requires a disk access.
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                A technique that's used to translate from the virtual page
+                number (VPN) to the physical page number (PPN).
+              </div>
+            </div>
+            <div className="border-4 border-cyan-500 hover:bg-opacity-0 transition duration: 0 h-32 text-cyan-900 bg-cyan-900">
+              <div className="flex items-center justify-center h-full select-none">
+                Acryonm for "Translation Lookaside Buffer" <br />
+                Separates the cache from the page table and helps in doing a
+                page lookup in main memory if it's a hit!
+              </div>
+            </div>
+          </div>
+
           {/* ----- Chapter 6 Topics ----- */}
 
+          <div className="my-32 grid grid-cols-4 gap-x-4 gap-y-4 border-4 text-center border-white">
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] col-span-4 select-none">
+              {" "}
+              Chapter 6 - Parallel Processor{" "}
+            </div>
+
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              Multicore{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              Multi-processor{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              Cluster{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              Supercomputer{" "}
+            </div>
+
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                A processor with multiple independent cores that can execute
+                tasks simultaneously and enhances its performance.
+              </div>
+            </div>
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                A core with multiple processors that execute multiple tasks and
+                enhances its performance.
+              </div>
+            </div>
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                A group of interconnected computers working together to perform
+                a unified task or provide high-performance computing
+                capabilities.
+              </div>
+            </div>
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                A powerful and high-performance computer designed to handle
+                complex calculations.
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              Cloud{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              Safety{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              Efficiency{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              Scalability{" "}
+            </div>
+
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                Remote accessible internet servers that store/manage data and
+                provide various services.
+              </div>
+            </div>
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                A challenge that exploits resources to prevent any potential
+                hazards (e.g. Pipeline Hazards).
+              </div>
+            </div>
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                A challenge that exploit resources, keep processors busy.
+              </div>
+            </div>
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                A challenge that determines if performance can grow as you add
+                more hardware.
+              </div>
+            </div>
+
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              SMP{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              Distributed Memory System{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              Vector Processors{" "}
+            </div>
+            <div className="border-4 font-bold bg-[#00ffca] border-[#00e1b2] select-none">
+              {" "}
+              GPUs{" "}
+            </div>
+
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                Acronym for Single Memory Processor <br />A multiprocessor that
+                consists of multiple processors that share the same lower level
+                cache (LLC), D-RAM, and I/O.
+              </div>
+            </div>
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                A multiprocessor with each processor having its own address
+                space connected via an I/O bus. Processors share data by
+                explicitly sending and receiving information through an
+                interconnection network.
+              </div>
+            </div>
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                Processors that exploit Single Instruction Multiple Data (SIMD)
+                - Performing the same operation of every element of the vector.
+              </div>
+            </div>
+            <div className="border-4 border-[#00e1b2] hover:bg-opacity-0 transition duration: 0 h-32 text-[#009e7d] bg-[#009e7d]">
+              <div className="flex items-center justify-center h-full select-none">
+                A type of processors that render and accelerate graphics while
+                performing parallel computing tasks. <br />
+                They have many recent applications in AI/ML.
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </>
