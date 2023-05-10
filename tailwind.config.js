@@ -6,7 +6,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "pink-purple": "url('/caProjectBackground.jpg')",
+      },
+    },
   },
   plugins: [],
 };
