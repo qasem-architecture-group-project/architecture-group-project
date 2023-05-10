@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import QuizView from "@/components/quizView";
 import ScoreView from "@/components/scoreView";
 import cacheQuiz from "@/constants/quiz_content";
+import pipeliningQuiz from "@/constants/quiz_content";
 import IncorrectQuestionsView from "@/components/incorrectQuestionView";
 
 export default function Quizzes() {
@@ -54,8 +55,8 @@ export default function Quizzes() {
     switch (selectedQuizType) {
       case "cacheQuiz":
         return cacheQuiz;
-      case "processorDatapathQuiz":
-        return processorDatapathQuizQuestions;
+      case "pipeliningQuiz":
+        return pipeliningQuizQuestions;
       default:
         return [];
     }
@@ -81,15 +82,13 @@ export default function Quizzes() {
                   className="border w-4/5 rounded-lg border-slate-400 mx-auto mt-2 p-2 hover:border-sky-300 hover:text-sky-300 hover:font-bold hover:border-2"
                   onClick={() => handleQuizTypeSelection("cacheQuiz")}
                 >
-                  Caches
+                  Caches & Memory
                 </button>
                 <button
                   className="border w-4/5 rounded-lg border-slate-400 mx-auto mt-2 p-2 hover:border-sky-300 hover:text-sky-300 hover:font-bold hover:border-2"
-                  onClick={() =>
-                    handleQuizTypeSelection("processorDatapathQuiz")
-                  }
+                  onClick={() => handleQuizTypeSelection("pipeliningQuiz")}
                 >
-                  Processor Datapath
+                  Pipelining
                 </button>
               </div>
             ) : viewIncorrectQuestions ? (
