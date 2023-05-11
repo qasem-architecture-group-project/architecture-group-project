@@ -1,5 +1,3 @@
-import questions from "../constants/quiz_content";
-
 export default function QuizView({
   questions,
   currentQuestion,

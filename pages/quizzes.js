@@ -3,12 +3,11 @@ import Navigation from "@/components/navigation";
 import React, { useState, useEffect } from "react";
 import QuizView from "@/components/quizView";
 import ScoreView from "@/components/scoreView";
-import cacheQuiz from "@/constants/quiz_content";
-import pipeliningQuiz from "@/constants/quiz_content";
+import { cacheQuiz } from "@/constants/quiz_content";
+import { pipeliningQuiz } from "@/constants/quiz_content";
 import IncorrectQuestionsView from "@/components/incorrectQuestionView";
 
 export default function Quizzes() {
-  const [animalInput, setAnimalInput] = useState("");
   const [result, setResult] = useState();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [isQuizOver, setIsQuizOver] = useState(false);
@@ -56,7 +55,7 @@ export default function Quizzes() {
       case "cacheQuiz":
         return cacheQuiz;
       case "pipeliningQuiz":
-        return pipeliningQuizQuestions;
+        return pipeliningQuiz;
       default:
         return [];
     }
@@ -98,6 +97,7 @@ export default function Quizzes() {
                 handleResetClick={handleResetClick}
                 score={score}
                 setViewIncorrectQuestions={setViewIncorrectQuestions}
+                questions={getQuestionsForSelectedQuizType()}
               />
             ) : (
               <QuizView

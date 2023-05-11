@@ -121,9 +121,6 @@ export const cacheQuiz = [
 ];
 
 export const pipeliningQuiz = [
-  // Existing questions
-  // ...
-
   {
     question: "What is the purpose of pipelining in modern processors?",
     answers: [

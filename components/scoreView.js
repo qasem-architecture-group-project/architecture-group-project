@@ -5,8 +5,9 @@ export default function ScoreView({
   handleResetClick,
   score,
   setViewIncorrectQuestions,
+  questions,
 }) {
-  const goodScore = score >= 1;
+  const goodScore = score / questions.length >= 0.8;
   const confettiColors = [
     "#FFBE0B",
     "#FB5607",
