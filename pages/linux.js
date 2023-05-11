@@ -11,7 +11,302 @@ export default function Linux() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navigation />
+        <div className="bg-pink-purple bg-fixed bg-center bg-cover min-h-screen">
+          <Navigation />
+          <div className="text-4xl text-center font-bold text-white m-8">
+            Linux Tutorial
+          </div>
+          <div className="border p-6 m-6 text-center bg-opacity-50 bg-indigo-900 text-white ">
+            <div>Index</div>
+            <div className="text-left">1. What is Linux?</div>
+            <div className="text-left">
+              2. How do Linux and Computer Architecture relate?
+            </div>
+            <div className="text-left">3. What are the benefits of Linux?</div>
+            <div className="text-left">4. How to access Linux?</div>
+            <div className="text-left">5. x86 vs POWER8</div>
+            <div className="text-left">6. Basics to Navigating Linux</div>
+            <div className="text-left">
+              7. How can I connect code samples from Git?
+            </div>
+            <div className="text-left">
+              8. How can we build and execute code samples?
+            </div>
+            <div className="text-left">9. How can we meausre performance?</div>
+            <div className="italic">
+              Feel free to ctrl+f to find the section you want to see!
+            </div>
+          </div>
+          <div className="border p-6 m-6 text-center bg-opacity-50 bg-indigo-900 text-white rounded-full">
+            <div>What is Linux?</div>
+            <div>
+              Linux is a free and open-source operating system kernel. This is
+              important because an operating system (OS) is a software that acts
+              as a bridge between computer hardware and software applications,
+              which is basically what you learn about in computer architecture!
+              You will likely use Linux to search through files and directories
+              in order to build and execute code samples, measure performance,
+              and compare architectures. Although scary, it can be quite simple!
+              If you run into an error, the quickest online resourse is ChatGPT,
+              which can help you learn and navigate the Linux enviornment!
+            </div>
+          </div>
+          <div className="border p-6 m-6 text-center bg-opacity-50 bg-indigo-900 text-white rounded-full">
+            <div>How do Linux and Computer Architecture relate?</div>
+            <div className=" m-3 text-center">
+              <div>
+                ~ Command Line Interface: The command line interface allows you
+                to explore the interface of a system or program.
+              </div>
+            </div>
+            <div className=" m-3 text-center">
+              <div>
+                ~ Open Source Environment: You can directly interact with a
+                computer’s hardware and internal workings of the operating
+                system. This means the source codes, data structures,
+                algorithms, etc.
+              </div>
+            </div>
+            <div className=" m-3 text-center">
+              <div>
+                ~ Linux Tools: Linux provides a lot of tools that can help you
+                learn more about computer architecture by analyzing performance
+                of systems, debugging, and other experimentations.
+              </div>
+            </div>
+          </div>
+          <div className="border p-6 m-6 text-center bg-opacity-50 bg-indigo-900 text-white rounded-full">
+            <div>What are the benefits of Linux?</div>
+            <div>
+              Because Linux is used in a variety of areas in the computer
+              science industry, it is an excellent resume component. Linux
+              demonstrates what you know about operating systems and helps you
+              stand out to other candidates in the field. When using Linux as a
+              skill on a resume, you can even specify your experience and
+              proficiency.
+            </div>
+          </div>
+          <div className="border p-6 m-6 mb-0 text-center bg-opacity-50 bg-indigo-900 text-white  rounded-full">
+            <div>How to access Linux?</div>
+            <div>
+              If you are using Windows, search for "Command Prompt". If you have
+              a Mac, searcn and open for "Terminal". The process of logging into
+              a terminal window should be the same. You can use PuTTY if neither
+              work, but it can be a little tougher to use.
+            </div>
+          </div>
+          <div className="border p-6 m-6 mb-0 text-center bg-opacity-50 bg-indigo-900 text-white">
+            <div>x86 vs POWER8</div>
+            <div className=" m-3 text-center">
+              <div>
+                x86 is a complex instruction set computing (CISC) architecture
+                developed by Intel and AMD, while Power8 is a reduced
+                instruction set computing (RISC) architecture developed by IBM
+                (trust me, you will need to know this). In general, CISC
+                architectures use fewer instructions with more complex
+                operations, while RISC architectures use simpler instructions
+                that require more operations.
+              </div>
+              <div className="text-left bg-indigo-400 bg-opacity-50 ">
+                //To use x86 server, login normally
+              </div>
+              <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+                ssh netid@zeus.cs.txstate.edu
+              </div>
+              <div className="text-left bg-indigo-400 bg-opacity-50 ">
+                //To use POWER8 server, login normally, then type
+              </div>
+              <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+                ssh capi
+              </div>
+            </div>
+          </div>
+
+          <div className="border p-6 m-6 mb-0 text-center bg-opacity-50 bg-indigo-900 text-white">
+            <div>Basics to Navigating Linux</div>
+            <div className=" m-3 text-center">
+              To interact with the system, we need to know how to do some basic
+              commands to find the files we need to use. There are many
+              different ways to use these basic commands, but for now, let's
+              only use the basics until we are comfortable :D
+            </div>
+            <div className="m-3 text-center italic">
+              Side note: If you're using files from a course's git repo, connect
+              that first!!!
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //List: Displays of files in current directory
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              ls
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //Change Directory: Navigate a different directory
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              cd 'enter file name'
+            </div>
+          </div>
+          <div className="border p-6 m-6 mb-0 text-center bg-opacity-50 bg-indigo-900 text-white">
+            <div>How can I connect code samples from Git?</div>
+            <div className=" m-3 text-center">
+              When you connect your git repo, you are able to obtain code
+              samples. Navigate through code samples using 'ls' and 'cd'
+              commands. I recommend entering 'ls' anytime you change the
+              directory (aka use 'cd')
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //Clone the course repo on your server
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              git clone 'enter link to git'
+            </div>
+          </div>
+          <div className="border p-6 m-6 mb-0 text-center bg-opacity-50 bg-indigo-900 text-white">
+            <div>How can we build and execute code samples?</div>
+            <div className=" m-3 text-center">
+              Before building and executing the code, it is important that we
+              compile the code first. The -c option tells GCC to only compile
+              the source file without linking, which means it doesn't create an
+              executable file yet.
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //After running this command, you'll get a compiled object file
+              with the same name, but with a .o extension
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              gcc -c filename.c
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //To view the files in the current directory...
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              ls -ltr
+            </div>
+            <div className=" m-3 text-center">
+              Now we can start building! To create an executable file, we need
+              to remove the -c flag from the command. Instead, we use the -o
+              flag followed by the name of the executable file.
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //After running this command, you'll get an executable file named
+              'filename'
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              gcc -o filename filename.c
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              ls -ltr
+            </div>
+            <div className=" m-3 text-center">
+              Let's take this a step further and create a binary executeable.
+              Binary executables are machine code files, which means they can be
+              directly executed by the computer's hardware. This should be the
+              same for both x86 and POWER8
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //After running this command, this will display detailed
+              information about the compilation steps and tools used.
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              gcc -v -o filename filename.c
+            </div>
+            <div className=" m-3 text-center">
+              Let's go ever FURTHER and generate the assembly code. If you want
+              to view the human-readable assembly code generated during the
+              compilation process, use the -S option.
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //After running this command, this will create an assembly file
+              with the same name but with a .s extension
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              gcc -S filename.c
+            </div>
+          </div>
+          <div className="border p-6 m-6 mb-0 text-center bg-opacity-50 bg-indigo-900 text-white">
+            <div>How can we meausre performance?</div>
+            <div className=" m-3 text-center">
+              There are many ways to measure the performance of a program. For
+              now, let's take it step by step!
+            </div>
+            <div className=" m-3 text-center">
+              First, let's start with execution time. Not to get confused with
+              runtime, which is the period during which a program is running or
+              active, starting from the moment it is launched until it
+              terminates. Execution time is the amount of time it takes for a
+              program, function, or code segment to complete its task. Execution
+              time is often used as a metric to evaluate the performance or
+              efficiency of a program or algorithm, with shorter execution times
+              being preferable for faster performance. Again, everything should
+              be the same for both x86 and POWER8.
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //'time' will give three times: real, user, and sys
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //real: total time taken from the start to the end of a program's
+              execution
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //user: the actual time the program is running on the processor
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //sys: time when the system is doing some work either on behalf of
+              this program or some program
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              time ./filename 10000 5
+            </div>
+            <div className=" m-3 text-center">
+              Now let's optimize our code and meausre the execution time. By
+              optimizing your code, you could potentially increase and improve
+              performance. This means you'll likely get a reduced execution
+              time.
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //Replace -O3, with other optimizations to see different results
+              (-O1, -O2, etc)
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //Keep in mind, the default optimization is -O0
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              gcc -o matvec -O3 matvec.c
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              time ./matvec 10000 5
+            </div>
+            <div className=" m-3 text-center">
+              Now let's measure performance by hand OR use the perf tool given
+              in Linux. This one is easy...
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //Displays a list of available performance events that can be
+              monitored or traced
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              perf list
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              // Collects and displays event statistics for the ls command
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //Ex: CPU cycles, cache misses, or instructions executed
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              perf stat ls
+            </div>
+            <div className="text-left bg-indigo-400 bg-opacity-50 ">
+              //provides information on the number of CPU cycles, cache misses,
+              and instructions executed during the execution of matvec with the
+              given input parameters
+            </div>
+            <div className="text-left italic bg-indigo-400 bg-opacity-50 ">
+              perf stat ./matvec 10000 5
+            </div>
+          </div>
+        </div>
       </main>
     </>
   );
