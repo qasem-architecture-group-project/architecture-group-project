@@ -20,6 +20,9 @@ module.exports = {
         'linux-image': "url('/linuximage.png')",
         'quiz-image': "url('/quizimage.png')",
         'pink-purple': "url('/caProjectBackground.jpg')",
+         dark: "url('/dark.jpg')",
+         medium: "url('/medium.jpg')",
+         bright: "url('/bright.jpg')",
       },
       fontFamily: {
         'owners': ['owners', 'sans-serif'],

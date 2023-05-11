@@ -1,8 +1,19 @@
+# CompArch Companion
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+
+1. First, install the required dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+2. Then run the development server:
 
 ```bash
 npm run dev
@@ -22,17 +33,34 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Flashcards Overview
 
-To learn more about Next.js, take a look at the following resources:
+Each flashcard corresponds to a topic on a chapter covered in the course (both midterm and final content).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Above each card is a term where you first think of the meaning of each word. To view an answer, hover your mouse over the block to view the terminology of a word. The content will be uncovered once your mouse is not hovering over the block. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+** NOTE **: Since each flashcard is closely compact together, it’s best to place your mouse in the middle of the screen. If needed, you can hover over (or near) the header of the flashcard that the user would want to test their understanding on. 
 
-## Deploy on Vercel
+## Linux Tutorial Overview 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The Linux Tutorial is a one-page tutorial that teaches students about what Linux is, how Linux can be applied in computer architecture, and how it will be used in class. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The usage of the Linux tutorial is fairly simple. It’s one page with an index and labeled sections. 
+1. What is Linux?
+2. How do Linux and Computer Architecture relate?
+3. What are the benefits of Linux?
+4. How to access Linux?
+5. x86 vs POWER8
+6. Basics to Navigating Linux
+7. How can I connect code samples from Git?
+8. How can we build and execute code samples?
+9. How can we measure performance?
+Users are encouraged to use `ctrl+f` to access different sections on the page conveniently. Each section is either in a box or an oval. Ovals have general information about Linux and boxes that have the actual tutorial for the class. Tutorials also contain information to explain the tutorial further. 
+
+## Quizzes Overview
+
+1. Select a quiz type (e.g., Caches & Memory, Pipelining).
+2. Answer the multiple-choice questions displayed on the screen.
+3. Once the quiz is over, review your score.
+4. Click the "View Incorrect Questions" button to see explanations for the questions you answered incorrectly.
+5. Click the "Reset Quiz" button to start over with a new quiz.
